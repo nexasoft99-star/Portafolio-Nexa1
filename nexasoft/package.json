@@ -1,0 +1,13 @@
+{
+  "name": "nexasoft-portfolio",
+  "version": "1.0.0",
+  "description": "Sitio web de NexaSoft",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build needed'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
