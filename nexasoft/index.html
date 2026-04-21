@@ -844,6 +844,60 @@
     .toast.show { transform: translateY(0); opacity: 1; }
     .toast-error { border-color: #f5c6cb; color: #721c24; }
 
+    /* Redes sociales */
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sg);
+      border: 1px solid var(--sb);
+      color: var(--sc);
+      font-size: .82rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform var(--trans), box-shadow var(--trans), background var(--trans);
+    }
+    .social-pill:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px var(--sb);
+      background: var(--sb);
+    }
+
+    /* Footer social icons */
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .footer-social-icon {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.6);
+      font-size: .9rem;
+      text-decoration: none;
+      transition: background var(--trans), color var(--trans), transform var(--trans);
+    }
+    .footer-social-icon:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
     /* ==============================================
        FOOTER
     ============================================== */
@@ -1228,6 +1282,19 @@
             <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
             <span>Colombia 🇨🇴</span>
           </div>
+
+          <!-- Redes sociales -->
+          <div class="social-row reveal d5">
+            <a href="https://www.instagram.com/nexiasoft_/" target="_blank" class="social-pill" style="--sc:#e1306c;--sg:rgba(225,48,108,.12);--sb:rgba(225,48,108,.2)">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61567237343410" target="_blank" class="social-pill" style="--sc:#1877f2;--sg:rgba(24,119,242,.1);--sb:rgba(24,119,242,.2)">
+              <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.tiktok.com/@nexasoft_" target="_blank" class="social-pill" style="--sc:#010101;--sg:rgba(1,1,1,.07);--sb:rgba(1,1,1,.15)">
+              <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+          </div>
         </div>
 
         <!-- Formulario -->
@@ -1284,6 +1351,13 @@
     <div class="container">
       <div class="footer-logo">Nexa<span>Soft</span></div>
       <div class="footer-slogan">"Conectamos tu negocio con soluciones simples"</div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/nexiasoft_/" target="_blank" class="footer-social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61567237343410" target="_blank" class="footer-social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@nexasoft_" target="_blank" class="footer-social-icon" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://github.com/nexasoft99-star" target="_blank" class="footer-social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:nexasoft99@gmail.com" class="footer-social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
       <p>© 2025 NexaSoft — Todos los derechos reservados. Hecho con <span>♥</span> en Colombia 🇨🇴</p>
     </div>
   </footer>
